@@ -1,26 +1,26 @@
 <div class="container" style="margin: 100px auto;">
     <div class="row">
         <div class="col-6 offset-3">
-                <h4>Modificar una nueva novedad</h4>
-            <form action="/admin/novedades/modificar" method="post">
-                <input type="hidden" value="{{novedad.id}}" name="id">
+                <h4>Modificar un evento</h4>
+            <form action="/admin/eventos/modificar" method="post">
+                <input type="hidden" value="{{eventos.id}}" name="id">
                 <div class="row mb-3">
                     <div class="col-sm-10">
-                        <input type="textextarea" class="form-control" id="usuario" placeholder="Titulo" name="titulo" value="{{novedad.titulo}}">
+                        <input type="textextarea" class="form-control" id="usuario" placeholder="Titulo" name="titulo" value="{{eventos.titulo}}">
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-sm-10">
                         <textarea type="text" class="form-control" id="inputEmail3" placeholder="Subtitulo"
-                            name="subtitulo">{{novedad.subtitulo}}</textarea>
+                            name="subtitulo">{{eventos.subtitulo}}</textarea>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <div class="col-sm-10">
                         <textarea type="text" class="form-control" placeholder="Cuerpo"
-                            name="cuerpo">{{novedad.cuerpo}}</textarea>
+                            name="cuerpo">{{eventos.cuerpo}}</textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Modificar</button>

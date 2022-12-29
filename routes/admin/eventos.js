@@ -80,8 +80,8 @@ router.post('/agregar', async (req, res, next) => {
 
         console.log(obj)
 
-        await EventosModel.modificarEventosById(obj, req.body.id);
-        res.redirect('/admin/novedades');
+        await eventosModel.modificarEventosById(obj, req.body.id);
+        res.redirect('/admin/eventos');
     } catch (error){
         console.log(error)
         res.render('admin/modificar', {
