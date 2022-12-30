@@ -3,9 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-require('dotenv').config();
 var session = require('express-session');
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -24,7 +23,6 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -35,11 +33,11 @@ app.use(session({
   secret:"PW2022intawqye",
   resave: false,
   saveUninitialized: true
-}))
+}));
 
   secured = async (req, res, next) => {
     try {
-      console.log(req.session.id_usuario);
+      console.log(`test session ${req.session.id_usuario}`);
       if(req.session.id_usuario) {
         next();
       } else {

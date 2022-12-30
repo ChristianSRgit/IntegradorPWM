@@ -19,7 +19,6 @@ router.post('/',async (req, res, next) => {
     try{
         var usuario = req.body.usuario;
         var password = req.body.password;
-
         var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
 
         if(data != undefined){
