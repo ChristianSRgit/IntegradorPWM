@@ -182,19 +182,6 @@ footer {
     padding-bottom: 10PX;
 }
 
-.servicio .info p {
-    font-size: 13px;
-}
-
-.servicio img {
-    border-radius: 13px;
-    display: block;
-    max-width: 225px;
-}
-
-.servicio:nth-child(even) {
-    flex-direction: row-reverse;
-}
 
 .galeria {
     display: flex;
@@ -204,11 +191,15 @@ footer {
 
 .galeria img {
     width: 18%;
-    border: 1px solid #ddd;
     padding: 0.3em;
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-right: 2%;
+    transition: .2s;
+}
+
+.galeria img:hover{
+    transform: scale(1.5);
 }
 
 .contacto {

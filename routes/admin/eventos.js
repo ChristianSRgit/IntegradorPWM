@@ -56,10 +56,10 @@ router.post('/agregar', async (req, res, next) => {
  router.get('/modificar/:id', async (req, res, next) => {
     var id = req.params.id;
 
-    console.log(req.params.id);
+    console.log(`id del evento ${req.params.id}`);
 
     var evento = await eventosModel.getEventosById(id);
-
+    console.log(evento)
     res.render('admin/modificar', {
         layout:'admin/layout',
         evento
@@ -68,7 +68,7 @@ router.post('/agregar', async (req, res, next) => {
  })
 
  //modificacion
- router.post('/modificar', async (req, res, next) => {
+ router.post('/modificar/', async (req, res, next) => {
     try {
         console.log(req.body);
 
