@@ -1,12 +1,16 @@
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #333;
-    padding: 16px 0;
+    padding: 0.5rem 0;
 }
 
 header h1 {
@@ -68,8 +72,8 @@ footer {
     color: #f1f1f1;
     text-align: center;
     padding: 5px 0;
-    margin-top: 20px;
-    margin-bottom: auto;
+    margin-top: auto;
+    position: sticky;
 }
 
 .holder {
@@ -238,16 +242,16 @@ footer {
     height: 150px;
     width: 350px;
     border: 1px solid grey;
-    border-radius: 1%;
-    background-color: #9ca0a1;
+    border-radius: .375rem;
+    background-color: #5f095b36;
 
 }
 
 .formulario input[type="text"] {
     width: 350px;
     border: 1px solid grey;
-    border-radius: 1%;
-    background-color: #9ca0a1;
+    border-radius: .375rem;
+    background-color: #5f095b36;
 }
 
 .formulario input[type="submit"] {
@@ -265,3 +269,20 @@ footer {
 .formulario input[type="submit"]:hover {
     background-color: #5f095bd2;
 }
+.btnContacto{
+    border-radius: .375rem;
+    border: .2px solid black;
+   
+}
+.loginForm{
+    padding-top: 20%;
+    padding-bottom: 0.5rem;
+}
+
+.contModificar,
+.contAgregar{
+    min-width:60rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
+
