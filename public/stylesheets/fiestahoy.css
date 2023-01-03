@@ -250,8 +250,8 @@ footer {
 .formulario input[type="text"],input[type=number]{
     width: 350px;
     border: 1px solid grey;
-    border-radius: 1%;
-    background-color: #9ca0a1;
+    border-radius: .375rem;
+    background-color: #5f095b36;
 }
 
 .formulario input[type="submit"] {
